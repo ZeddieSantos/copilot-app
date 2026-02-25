@@ -1,0 +1,19 @@
+<div class="screen-canvas container px-4 px-md-5 py-5">
+  <h1 class="page-title mb-4">Work</h1>
+
+  @for (work of works; track work.title) {
+    <article class="row g-4 py-4 work-row">
+      <div class="col-md-4">
+        <img class="w-100 work-image" [src]="work.image" [alt]="work.title" />
+      </div>
+      <div class="col-md-8">
+        <h2 class="work-title mb-2">{{ work.title }}</h2>
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <span class="badge rounded-pill bg-dark px-3 py-2">{{ work.year }}</span>
+          <span class="text-secondary">{{ work.category }}</span>
+        </div>
+        <p class="mb-0">{{ work.summary }}</p>
+      </div>
+    </article>
+  }
+</div>

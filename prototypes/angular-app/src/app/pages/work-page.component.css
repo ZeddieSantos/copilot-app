@@ -1,0 +1,23 @@
+.screen-canvas {
+  max-width: 1152px;
+}
+
+.page-title {
+  font-size: 44px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.work-row {
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.work-image {
+  max-width: 246px;
+  border-radius: 6px;
+}
+
+.work-title {
+  font-size: 30px;
+  line-height: 1.2;
+}
